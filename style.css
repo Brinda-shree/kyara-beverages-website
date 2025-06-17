@@ -1,0 +1,230 @@
+/* General styles */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #ffe4ec;
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    background-color: #ffb6c1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 50px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.navbar nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.navbar nav a:hover {
+    color: #ff69b4;
+}
+
+/* Hero Section with centered logo background */
+.hero {
+    height: 100vh;
+    background: url('images/kyara-logo.png') center center no-repeat;
+    background-size: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+.hero .overlay {
+    background-color: rgba(255, 182, 193, 0.8);
+    padding: 40px;
+    border-radius: 12px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #444;
+    margin-top: 15px;
+}
+
+/* Why Section */
+.why {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.why h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.feature-card {
+    background-color: #fff0f5;
+    border-radius: 12px;
+    padding: 20px;
+    width: 200px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.feature-card img {
+    width: 100px;
+    height: 100px;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+}
+
+/* Product Section */
+.products {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.products h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.product-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    background-color: #fff0f5;
+    border-radius: 12px;
+    width: 250px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    cursor: pointer;
+}
+
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.product-card h3 {
+    margin: 15px 0 10px;
+    color: #333;
+}
+
+.product-card p {
+    padding: 0 15px;
+    color: #555;
+}
+
+.buy-btn {
+    margin: 15px 0 20px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #ff69b4;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.buy-btn:hover {
+    background-color: #ff1493;
+}
+
+/* Contact Section */
+.contact {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact input,
+.contact textarea {
+    width: 300px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.contact button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #ff69b4;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact button:hover {
+    background-color: #ff1493;
+}
+
+/* Footer */
+footer {
+    background-color: #ffb6c1;
+    padding: 20px;
+    text-align: center;
+}
+
+footer .socials a {
+    margin: 0 10px;
+    color: #333;
+    text-decoration: none;
+}
+
+footer .socials a:hover {
+    color: #ff69b4;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
