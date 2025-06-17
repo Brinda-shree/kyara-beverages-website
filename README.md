@@ -4,7 +4,7 @@
 
 A modern, responsive landing page for **Kyara Beverages** — millet-based fruit drinks.
 
-🔗 [Live Demo](https://yourusername.github.io/kyara-beverages/)  <!-- (replace with your GitHub Pages URL) -->
+🔗 [Live Demo](https://Brinda-shree.github.io/kyara-beverages/)  <!-- (replace with your GitHub Pages URL) -->
 
 ---
 
